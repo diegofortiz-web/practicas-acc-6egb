@@ -208,8 +208,8 @@ const PRACTICA = {
     titulo: "Software educativo",
     descripcion: "Juego educativo elaborado en Pilas Engine como recurso educativo digital de la práctica.",
     plataforma: "Pilas Engine",
-    embed: "",
-    enlace: "",
+    embed: "recursos/pilas-engine/proyecto/index.html",
+    enlace: "recursos/pilas-engine/proyecto/index.html",
     proporcion: "4 / 3"
   }
 };
