@@ -29,12 +29,48 @@ const PRACTICA = {
   carrera: "Carrera de Pedagogía de las Ciencias Experimentales Informática",
   universidad: "Universidad Nacional de Loja",
   titulo: "Prácticas preprofesionales",
+
+  // Encabezado superior (modelo mailing institucional): título y recuadro rojo.
+  encabezado: {
+    titulo: "Prácticas preprofesionales",
+    etiqueta: "Quinto ciclo"
+  },
+
+  // Carrusel de portada: las imágenes van en assets/img/ (puedes cambiarlas por las tuyas).
+  // destino: sección a la que lleva el botón (#datos-practica, #ciclo, #planificaciones, #software-educativo).
+  portada: [
+    {
+      imagen: "assets/img/portada-1.jpg",
+      alt: "Estudiantes trabajan en equipo frente a una computadora portátil",
+      titulo: "Prácticas preprofesionales",
+      texto: "Diseñamos planificaciones microcurriculares de Informática y elaboramos material digital para el aprendizaje en contextos formales y no formales.",
+      boton: "Leer más",
+      destino: "#datos-practica"
+    },
+    {
+      imagen: "assets/img/portada-2.jpg",
+      alt: "Estudiantes de la Unidad de Educación a Distancia y en Línea frente al edificio UED",
+      titulo: "Planificaciones microcurriculares",
+      texto: "Tres planificaciones de Informática Educativa para sexto grado de EGB en las Escuelas Municipales de Loja, organizadas según los tres momentos de la clase ACC: Anticipación, Construcción y Consolidación.",
+      boton: "Leer más",
+      destino: "#planificaciones"
+    },
+    {
+      imagen: "assets/img/portada-3.jpg",
+      posicion: "68% center",   // parte de la foto que se mantiene visible en pantallas angostas
+      alt: "Docente con una computadora portátil junto a niños que trabajan en el laboratorio de computación",
+      titulo: "Recursos educativos digitales",
+      texto: "Videos, juegos, presentaciones, cuestionarios y un software educativo en Pilas Engine para cada momento del aprendizaje.",
+      boton: "Leer más",
+      destino: "#ciclo"
+    }
+  ],
   datos: [
-    ["Tema", "Planificación curricular en las instituciones educativas (diseño y planificación de modelos microcurriculares en Informática para los contextos formales y no formales, orientados a la elaboración de material digital para el aprendizaje). Septiembre 2025 – febrero 2026 · 80 horas de prácticas preprofesionales de la asignatura."],
+    ["Tema", "Planificación curricular en las instituciones educativas (diseño y planificación de modelos microcurriculares en Informática para los contextos formales y no formales, orientados a la elaboración de material digital para el aprendizaje). Septiembre 2026 – febrero 2027 · 80 horas de prácticas preprofesionales de la asignatura."],
     ["Director UEDL – UNL", "Dr. Milton Mejía Balcázar"],
-    ["Encargado de la gestión académica", "Mg.Sc. Diego Fernando Paqui Abrigo"],
+    ["Encargado de la gestión académica", "Mgtr. Luis Alberto Chicaiza González"],
     ["Docente tutor académico de prácticas", "Mgtr. Diego Fernando Ortiz Cango"],
-    ["Estudiante", "Nombre y apellido del estudiante"],
+    ["Estudiante", "NOMBRES Y APELLIDOS DEL ESTUDIANTE"],
     ["Ciclo", "5"],
     ["Paralelo", "A"]
   ],
@@ -44,7 +80,7 @@ const PRACTICA = {
     asignatura: "Informática Educativa",
     grado: "Sexto grado de EGB (Subnivel Medio) · Paralelo «A»",
     unidad: "Unidad didáctica 2 (Bloque 3: Ofimática) · Utilizando Office: Word",
-    anio: "Año lectivo 2025 – 2026"
+    anio: "Año lectivo 2026 – 2027"
   },
 
   // Documento de las planificaciones en formato flipbook (Heyzine, Issuu, Drive…)
@@ -201,15 +237,17 @@ const PRACTICA = {
   ],
 
   // Recurso educativo digital: software educativo elaborado en Pilas Engine.
-  // Opción A (recomendada): exporta el juego desde Pilas Engine como HTML, descomprímelo
-  //   en la carpeta  recursos/pilas-engine/  y deja embed: "recursos/pilas-engine/index.html"
-  // Opción B: si el juego está publicado en internet, pega aquí su enlace.
+  //  1. En Pilas Engine exporta el juego como HTML (se descarga «mi-proyecto.zip»).
+  //  2. Descomprímelo: aparecen el archivo LEER y la carpeta «proyecto».
+  //  3. En GitHub entra a  recursos/pilas-engine/  y sube la carpeta «proyecto» completa.
+  //  4. Escribe en embed y enlace:  "recursos/pilas-engine/proyecto/index.html"
+  //  Si el juego está publicado en internet, pega aquí su enlace.
   software: {
     titulo: "Software educativo",
     descripcion: "Juego educativo elaborado en Pilas Engine como recurso educativo digital de la práctica.",
     plataforma: "Pilas Engine",
-        embed: "recursos/pilas-engine/proyecto/index.html",
-    enlace: "recursos/pilas-engine/proyecto/index.html",
+    embed: "",
+    enlace: "",
     proporcion: "4 / 3"
   }
 };
